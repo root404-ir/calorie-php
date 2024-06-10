@@ -47,7 +47,6 @@ body {
 @keyframes shadow {
     0% {
         box-shadow: 0px 0px 20px 15px var(--color);
-        ;
     }
 
     20% {
