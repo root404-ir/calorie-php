@@ -1,0 +1,159 @@
+@font-face {
+    font-family: Tanha;
+    src: url('fonts/Tanha.eot');
+    src: url('fonts/Tanha.eot?#iefix') format('FontName-opentype'),
+        url('fonts/Tanha.woff') format('woff'),
+        url('fonts/Tanha.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --color: #ffd700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Tanha;
+    direction: rtl;
+    text-align: right;
+    height: 100vh;
+    background-color: #000000;
+    color: #fff;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    max-width: 800px;
+    height: 90%;
+    box-shadow: 0px 0px 20px 15px var(--color);
+    animation: 3s shadow infinite;
+    background-image: url('img/—Pngtree—calories\ clipart\ flat\ food\ icons_11073419.png');
+    background-position: 30% 20%;
+    background-size: cover;
+    position: relative;
+}
+
+@keyframes shadow {
+    0% {
+        box-shadow: 0px 0px 20px 15px var(--color);
+        ;
+    }
+
+    20% {
+        box-shadow: 0px 0px 20px 15px #ff4500;
+    }
+
+    40% {
+        box-shadow: 0px 0px 20px 15px #adff2f;
+    }
+    60% {
+        box-shadow: 0px 0px 20px 15px #e72fff;
+    }
+    80% {
+        box-shadow: 0px 0px 20px 15px #2fff6d;
+    }
+    100% {
+        box-shadow: 0px 0px 20px 15px #2ffff5;
+    }
+}
+
+.back::after {
+    content: '';
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 800px;
+    z-index: 10;
+}
+
+.frm-container {
+    z-index: 100000;
+}
+
+.container h1 {
+    margin-bottom: 1rem;
+    letter-spacing: 8px;
+    text-shadow: 0 0 20px 20px var(--color);
+}
+
+.container form select {
+    padding: 7px 13px;
+    background-color: var(--color);
+    border: 0;
+    border-radius: 10px;
+}
+
+.container form input[type='text'] {
+    border-radius: 7px;
+    padding: 5px 8px;
+    border: 5px solid var(--color);
+    width: 25%;
+    transition: width 0.3s ease-in;
+    text-align: center;
+}
+
+.container form input[type='text']:focus {
+    outline: none;
+    width: 35%;
+}
+
+.container form input[type='submit'] {
+    border: 0;
+    padding: 6px 20px;
+    width: 20%;
+    border-radius: 20px;
+    background-color: rgba(255, 215, 0, 1);
+}
+
+.container form input[type='submit']:hover {
+    background-color: rgba(255, 215, 0, 0.5);
+    cursor: pointer;
+}
+
+p {
+    font-weight: bold;
+    line-height: 40px;
+    margin-top: 20px;
+}
+
+
+.copy_right {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.copy_right button {
+    cursor: pointer;
+    background-color: #fff;
+    border: 3px solid var(--color);
+    border-radius: 10px;
+    padding: 4px 7px;
+    transition: all 0.3s ease-in;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.copy_right:hover svg {
+    display: inline;
+}
+
+svg {
+    vertical-align: middle;
+    display: none;
+}
